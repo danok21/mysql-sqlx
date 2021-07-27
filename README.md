@@ -7,4 +7,5 @@ CREATE TABLE student(
     age INT, 
     hobby VARCHAR(30)
     );
+    
 ```
