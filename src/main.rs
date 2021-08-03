@@ -10,11 +10,11 @@ async fn main()-> anyhow::Result<()> {
     //单个连接
     let mut pool = MySqlConnection::connect(&env::var("DATABASE_URL")?).await?;
 
-    /*
-    let sql="INSERT INTO student (id,name,age,hobby)VALUES ( 3,'tianda',12,'running')";
+
+    let sql="INSERT INTO student (id,name,age,hobby)VALUES ( 4,'Bob',12,'cycle')";
     let count=sqlx::query(sql).execute(&mut pool).await?;
     println!("{}",count);
-    */
+
 
     /*
     let sql=  "DELETE FROM student WHERE  id = 3";
